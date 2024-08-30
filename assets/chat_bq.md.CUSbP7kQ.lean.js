@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a2 as t}from"./chunks/framework.C94oF1kp.js";const g=JSON.parse('{"title":"内容补全接口","description":"","frontmatter":{},"headers":[],"relativePath":"chat/bq.md","filePath":"chat/bq.md"}'),n={name:"chat/bq.md"},e=t("",15),h=[e];function l(p,d,k,o,r,E){return a(),i("div",null,h)}const u=s(n,[["render",l]]);export{g as __pageData,u as default};
