@@ -1,1 +1,0 @@
-import{_ as s,c as i,o as a,a3 as n}from"./chunks/framework.Yvq-SOzX.js";const c=JSON.parse('{"title":"列出模型","description":"","frontmatter":{},"headers":[],"relativePath":"chat/model.md","filePath":"chat/model.md"}'),t={name:"chat/model.md"},h=n("",6),l=[h];function k(p,e,E,o,d,r){return a(),i("div",null,l)}const y=s(t,[["render",k]]);export{c as __pageData,y as default};
