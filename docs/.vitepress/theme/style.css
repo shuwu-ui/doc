@@ -1,0 +1,233 @@
+/**
+ * VitePress 主题自定义样式
+ * 参考: https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ */
+
+/* -----------------------------------------------------------------------------
+   颜色定义
+   -----------------------------------------------------------------------------
+   每种颜色都包括 3 个等级的实色和 1 个柔和色。各颜色定义如下：
+   ----------------------------------------------------------------------------- */
+
+   :root {
+    /* Default Colors */
+    --vp-c-default-1: var(--vp-c-gray-1);
+    --vp-c-default-2: var(--vp-c-gray-2);
+    --vp-c-default-3: var(--vp-c-gray-3);
+    --vp-c-default-soft: var(--vp-c-gray-soft);
+  
+    /* Brand Colors */
+    --vp-c-brand-1: var(--vp-c-indigo-1);
+    --vp-c-brand-2: var(--vp-c-indigo-2);
+    --vp-c-brand-3: var(--vp-c-indigo-3);
+    --vp-c-brand-soft: var(--vp-c-indigo-soft);
+  
+    /* Tip Colors */
+    --vp-c-tip-1: rgb(246, 252, 249); /* Tip 主色 */
+    --vp-c-tip-2: rgb(246, 252, 249); /* Tip hover 状态 */
+    --vp-c-tip-3: rgb(246, 252, 249); /* Tip 实色背景 */
+    --vp-c-tip-soft: rgba(246, 252, 249, 0.5); /* Tip 柔和背景 */
+  
+    /* Warning Colors */
+    --vp-c-warning-1: var(--vp-c-yellow-1);
+    --vp-c-warning-2: var(--vp-c-yellow-2);
+    --vp-c-warning-3: var(--vp-c-yellow-3);
+    --vp-c-warning-soft: var(--vp-c-yellow-soft);
+  
+    /* Danger Colors */
+    --vp-c-danger-1: var(--vp-c-red-1);
+    --vp-c-danger-2: var(--vp-c-red-2);
+    --vp-c-danger-3: var(--vp-c-red-3);
+    --vp-c-danger-soft: var(--vp-c-red-soft);
+  }
+  
+  /* -----------------------------------------------------------------------------
+     按钮组件样式
+     -----------------------------------------------------------------------------
+     自定义按钮样式，包括不同状态的背景色、文本色和边框色。
+     ----------------------------------------------------------------------------- */
+  
+  :root {
+    --vp-button-brand-border: transparent;
+    --vp-button-brand-text: var(--vp-c-white);
+    --vp-button-brand-bg: var(--vp-c-brand-3);
+    --vp-button-brand-hover-border: transparent;
+    --vp-button-brand-hover-text: var(--vp-c-white);
+    --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+    --vp-button-brand-active-border: transparent;
+    --vp-button-brand-active-text: var(--vp-c-white);
+    --vp-button-brand-active-bg: var(--vp-c-brand-1);
+  }
+  
+  /* -----------------------------------------------------------------------------
+     首页样式
+     -----------------------------------------------------------------------------
+     自定义首页的英雄图像和标题样式。
+     ----------------------------------------------------------------------------- */
+  
+  :root {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+  
+    --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
+    --vp-home-hero-image-filter: blur(44px);
+  }
+  
+  .hero {
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .hero .name {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+    background: var(--vp-home-hero-name-background);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .hero .tagline {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .hero .actions {
+    margin-top: 20px;
+  }
+  
+  .hero .actions .theme {
+    display: inline-block;
+    background-color: var(--vp-button-brand-bg);
+    color: var(--vp-button-brand-text);
+    padding: 12px 24px;
+    margin: 0 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero .actions .theme:hover {
+    background-color: var(--vp-button-brand-hover-bg);
+  }
+  
+  .hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+  
+  /* 响应式调整 */
+  @media (min-width: 640px) {
+    :root {
+      --vp-home-hero-image-filter: blur(56px);
+    }
+  
+    .hero {
+      padding: 80px 40px;
+    }
+  
+    .hero .name {
+      font-size: 4rem;
+    }
+  
+    .hero .tagline {
+      font-size: 1.75rem;
+    }
+  }
+  
+  @media (min-width: 960px) {
+    :root {
+      --vp-home-hero-image-filter: blur(68px);
+    }
+  
+    .hero {
+      padding: 100px 60px;
+    }
+  
+    .hero .name {
+      font-size: 4.5rem;
+    }
+  
+    .hero .tagline {
+      font-size: 2rem;
+    }
+  }
+  
+  /* -----------------------------------------------------------------------------
+     自定义块样式
+     -----------------------------------------------------------------------------
+     为自定义块 (如 TIP, WARNING, DANGER) 定义的背景色、文本色、边框等。
+     ----------------------------------------------------------------------------- */
+  
+  :root {
+    --vp-custom-block-tip-border: transparent;
+    --vp-custom-block-tip-text: var(--vp-c-text-1);
+    --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
+    --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
+  }
+  
+  /* -----------------------------------------------------------------------------
+     Features 区域样式
+     -----------------------------------------------------------------------------
+     美化 Features 区域的外观，使其与整体设计更加一致。
+     ----------------------------------------------------------------------------- */
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+  }
+  
+  .features .feature {
+    flex: 1 1 300px;
+    max-width: 300px;
+    margin: 15px;
+    padding: 30px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .features .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .features .feature .icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    color: var(--vp-c-brand-1);
+  }
+  
+  .features .feature .title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .features .feature .details {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* -----------------------------------------------------------------------------
+     Algolia 搜索组件样式
+     -----------------------------------------------------------------------------
+     自定义 Algolia 搜索组件的主颜色，以匹配主题风格。
+     ----------------------------------------------------------------------------- */
+  
+  .DocSearch {
+    --docsearch-primary-color: var(--vp-c-brand-1) !important;
+  }
+  
