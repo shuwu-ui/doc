@@ -1,1 +1,0 @@
-import{_ as s,c as i,o as a,a3 as t}from"./chunks/framework.BY8T3x_S.js";const g=JSON.parse('{"title":"创建嵌入","description":"","frontmatter":{},"headers":[],"relativePath":"chat/cjqr.md","filePath":"chat/cjqr.md"}'),n={name:"chat/cjqr.md"},l=t("",15),e=[l];function h(p,k,o,d,r,c){return a(),i("div",null,e)}const y=s(n,[["render",h]]);export{g as __pageData,y as default};
