@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/https://github.com/shuwu-ui/doc/',
+  base: '/doc/',
   title: "API使用文档",
   description: "API使用文档",
   themeConfig: {
