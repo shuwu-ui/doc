@@ -15,7 +15,7 @@ hero:
       link: /imagine/midjourney/imagine
     - theme: alt
       text: 视频模型文档
-      link: /runway/feed
+      link: /video/runway/feed
     - theme: alt
       text: 通用接口文档
       link: /chat/chat
