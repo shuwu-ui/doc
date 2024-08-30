@@ -1,1 +1,0 @@
-import{_ as s,c as t,o as a,a2 as i}from"./chunks/framework.C94oF1kp.js";const g=JSON.parse('{"title":"聊天接口（Chat）","description":"","frontmatter":{},"headers":[],"relativePath":"chat/chat.md","filePath":"chat/chat.md"}'),e={name:"chat/chat.md"},n=i("",17),d=[n];function h(l,p,o,k,r,c){return a(),t("div",null,d)}const u=s(e,[["render",h]]);export{g as __pageData,u as default};
